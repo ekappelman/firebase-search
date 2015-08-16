@@ -1,12 +1,14 @@
-var firebase = require('firebase');
-exports.answer = function(reference, inputKeyID, referenceKeyID) {
+exports.firebaseSearch = function(root, child, inputID, matchID) {
+  var reference = root.child(child);
+  keyCodeMatch = null;
   reference.once("value", function(snapshot) {
     snapshot.forEach(function(childSnapshot) {
-      var key = childSnapshot.key();
+      var keyCode = childSnapshot.key();
       var childData = childSnapshot.val();
-      if (childData.referenceKeyID == inputKeyID) {
-        return key;
+      if (childData[matchID] == inputID) {
+        keyCodeMatch = keyCode;
       }
-    })
+    });
   });
+  return keyCodeMatch;
 }

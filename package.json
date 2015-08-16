@@ -1,6 +1,6 @@
 {
   "name": "firebase-search",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Firebase search tool",
   "main": "firebase-search.js",
   "scripts": {
