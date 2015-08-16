@@ -1,4 +1,4 @@
-exports.firebaseSearch = function(root, child, inputID, matchID) {
+exports.fireKey = function(root, child, inputID, matchID) {
   var reference = root.child(child);
   keyCodeMatch = null;
   reference.once("value", function(snapshot) {
