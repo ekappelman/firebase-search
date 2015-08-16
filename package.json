@@ -1,0 +1,22 @@
+{
+  "name": "firebase-search",
+  "version": "1.0.0",
+  "description": "Firebase search tool",
+  "main": "firebase-search.js",
+  "scripts": {
+    "test": "N/A"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ekappelman/firebase-search.git"
+  },
+  "keywords": [
+    "firebase"
+  ],
+  "author": "Erik Kappelman",
+  "license": "open",
+  "bugs": {
+    "url": "https://github.com/ekappelman/firebase-search/issues"
+  },
+  "homepage": "https://github.com/ekappelman/firebase-search"
+}
